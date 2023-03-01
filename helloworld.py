@@ -5,11 +5,6 @@ app = Flask(__name__)
 
 app.secret_key = 'QWERTYUIOP'
 
-@app.route('/test', methods=['GET', "POST"])  # 路由默认接收请求方式位POST，然而登录所需要请求都有，所以要特别声明。
-def test():
-    if request.method == 'GET':
-        return render_template('test.html')
-
 @app.route('/login', methods=['GET', "POST"])  # 路由默认接收请求方式位POST，然而登录所需要请求都有，所以要特别声明。
 def login():
     if request.method == 'GET':

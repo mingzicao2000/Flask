@@ -3,6 +3,12 @@
  <head>
      <meta  charset="UTF-8">
      <title>register</title>
+         <script>
+function login()
+{
+	window.location.href="http://127.0.0.1:5000/login";
+}
+</script>
  </head>
  <body>
      <h1>Register</h1>
@@ -30,6 +36,7 @@
          <label>password</label><br>
          <input type="text" name="password"><br>
          <input  type="submit" name="register">{{msg}}
+         <input type="button" value="back to login" name="button1" onclick="login()">
      </form>
  </body>
  </html>

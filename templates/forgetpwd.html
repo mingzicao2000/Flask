@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>forget</title>
+             <script>
+function login()
+{
+	window.location.href="http://127.0.0.1:5000/login";
+}
+</script>
 </head>
 <body>
  <h1>Forget</h1>
@@ -15,7 +21,8 @@
          <input type="radio" name="userquestion" value="Whats the name of your primary school?">Whats the name of your primary school?<br>
          <label>useranswer</label><br>
          <input type="text" name="useranswer"><br>
-         <input  type="submit" name="login">{{msg}}
+         <input  type="submit" name="forgetpwd">{{msg}}
+         <input type="button" value="back to login" name="button2" onclick="login()">
      </form>
 </body>
 </html>
