@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<script>
+function msg1()
+{
+	alert("Hello world!");
+	window.location.replace("http://127.0.0.1:5000/test");
+}
+function msg2()
+{
+	alert("Hello world!");
+	window.location.replace("http://127.0.0.1:5000/login");
+}
+</script>
+</head>
+<body>
+
+<form>
+<input type="button" value="点我" name="button1" onclick="msg1()">
+<input type="button" value="点他" name="button2" onclick="msg2()">
+</form>
+
+<p>按钮点击时会触发 javascript 代码。</p>
+
+</body>
+</html>
