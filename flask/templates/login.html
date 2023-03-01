@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <script>
+function register()
+{
+	window.location.href="http://127.0.0.1:5000/register";
+}
+function forget()
+{
+	window.location.href="http://127.0.0.1:5000/forgetpwd";
+}
+</script>
+</head>
+<body>
+ <h1>Login</h1>
+     <form  method="post" >
+         <label>user</label><br>
+         <input type="text" name="user" ><br>
+         <label>password</label><br>
+         <input  type="password" name="pwd" ><br>
+         <input  type="submit" name="login">{{msg}}
+         <input type="button" value="register" name="button1" onclick="register()">
+         <input type="button" value="foreget password" name="button2" onclick="forget()">
+     </form>
+</body>
+</html>

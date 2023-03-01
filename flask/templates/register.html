@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta  charset="UTF-8">
+     <title>register</title>
+         <script>
+function login()
+{
+	window.location.href="http://127.0.0.1:5000/login";
+}
+</script>
+ </head>
+ <body>
+     <h1>Register</h1>
+     <form  method="post">
+         <label>username</label><br>
+         <input type="text" name="username"><br>
+         <label>firstname</label><br>
+         <input type="text" name="firstname"><br>
+         <label>lastname</label><br>
+         <input type="text"  name="lastname"><br>
+         <label>email</label><br>
+         <input type="email" name="email"><br>
+         <label>phone</label><br>
+         <input type="text" name="phone"><br>
+         <label>usertype</label><br>
+         <input type="radio" name="usertype" ,value="farmer">farmer<br>
+         <input type="radio" name="usertype" ,value="buyer">buyer<br>
+         <input type="radio" name="usertype" ,value="admin">admin<br>
+         <label>userquestion</label><br>
+         <input type="radio" name="userquestion" value="Whats your favorite food?">Whats your favorite food?<br>
+         <input type="radio" name="userquestion" value="Whats the name of your first pet?">Whats the name of your first pet?<br>
+         <input type="radio" name="userquestion" value="Whats the name of your primary school?">Whats the name of your primary school?<br>
+         <label>useranswer</label><br>
+         <input type="text" name="useranswer"><br>
+         <label>password</label><br>
+         <input type="text" name="password"><br>
+         <input  type="submit" name="register">{{msg}}
+         <input type="button" value="back to login" name="button1" onclick="login()">
+     </form>
+ </body>
+ </html>
